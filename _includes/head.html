@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ site.description }}">
+<title>{{ page.title | default: site.title }}</title>
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:url" content="{{ site.url }}">
+<meta property="og:type" content="website">
+
+<!-- FAQ Schema for AI/search indexing -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Espanglito?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Espanglito makes t-shirts for people who live between two worlds — the intersection of Spanish and English culture. Real humor, real identity, real community. Not corporate. Not a costume."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I submit a shirt idea?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Send your idea via WhatsApp or email. If we make it and sell ten, you get one free. No strings, no pitch deck required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy Espanglito shirts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The store is coming soon. Sign up or send us your idea to be first to know."
+      }
+    }
+  ]
+}
+</script>

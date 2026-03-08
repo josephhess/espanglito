@@ -1,0 +1,10 @@
+title: Espanglito
+description: Shirts for people who live between two worlds
+baseurl: ""
+url: "https://espanglito.com"
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

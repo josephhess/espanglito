@@ -1,0 +1,49 @@
+---
+layout: default
+title: Espanglito — Shirts for people who live between two worlds
+---
+
+<header>
+  <a href="/">
+    <img class="logo" src="/assets/images/logo/spanglito-logo-rectangle.png" alt="Espanglito">
+  </a>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Shirts for people who live <em>between two worlds</em><br>— porque that's where the good stuff is.</h1>
+    <p>Spanglish, humor, pride, community. Real micro-cultures, real people, real designs. Not a costume. Not a brand telling you what your culture means. Just shirts worth wearing.</p>
+  </section>
+
+  <!-- DESIGNS -->
+  <p class="section-title">Los diseños</p>
+  <div class="designs-grid">
+    {% for design in site.data.designs %}
+    <div class="design-card">
+      <img src="/assets/images/designs/{{ design.image }}" alt="{{ design.name }}">
+      <div class="card-body">
+        <h3>{{ design.name }}</h3>
+        <p>{{ design.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- COMMUNITY CTA -->
+  <div class="cta-block">
+    <h2>Got an idea for a shirt?</h2>
+    <p>Send it our way. Si lo hacemos y vendemos diez, you get one free. No pitch deck required.</p>
+    <a class="btn-whatsapp" href="https://wa.me/[NUMBER]">Send us your idea →</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>
+    <a href="https://www.tiktok.com/@espanglito" target="_blank">TikTok</a> &nbsp;·&nbsp;
+    <a href="https://www.facebook.com/espanglito" target="_blank">Facebook</a>
+  </p>
+  <p style="margin-top:0.5rem;">© {{ 'now' | date: "%Y" }} Espanglito</p>
+</footer>
