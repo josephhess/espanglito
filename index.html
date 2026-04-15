@@ -4,8 +4,8 @@ title: Espanglito — Shirts for people who live between two worlds
 ---
 
 <header>
-  <a href="/">
-    <img class="logo" src="/assets/images/logo/spanglito-logo-rectangle.png" alt="Espanglito">
+  <a href="{{ '/' | relative_url }}">
+    <img class="logo" src="{{ '/assets/images/logo/spanglito-logo-rectangle.png' | relative_url }}" alt="Espanglito">
   </a>
 </header>
 
@@ -22,7 +22,7 @@ title: Espanglito — Shirts for people who live between two worlds
   <div class="designs-grid">
     {% for design in site.data.designs %}
     <div class="design-card">
-      <img src="/assets/images/designs/{{ design.image }}" alt="{{ design.name }}">
+      <img src="{{ '/assets/images/designs/' | append: design.image | relative_url }}" alt="{{ design.name }}">
       <div class="card-body">
         <h3>{{ design.name }}</h3>
         <p>{{ design.description }}</p>

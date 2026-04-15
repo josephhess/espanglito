@@ -1,7 +1,7 @@
 - id: tomate-tu-tiempo
-  name: Tómate Tu Tiempo
+  name: Tomate Tu Tiempo
   image: tomate_tu_tiempo_current.png
-  description: Because nobody's rushing a tomato in a Hawaiian shirt
+  description: Calmate por favor
 
 - id: boonana
   name: Boonana
@@ -11,4 +11,4 @@
 - id: moouy-bien
   name: Moouy Bien
   image: mooey bien current.png
-  description: A cow. Giving a thumbs up. You're welcome.
+  description: Que?
