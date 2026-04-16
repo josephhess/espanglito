@@ -1,14 +1,43 @@
-- id: tomate-tu-tiempo
-  name: Tomate Tu Tiempo
-  image: tomate_tu_tiempo_current.png
-  description: Calmate por favor
-
-- id: boonana
-  name: Boonana
-  image: boonana spanish tienes miedo_current.png
-  description: Tienes miedo?
-
 - id: moouy-bien
-  name: Moouy Bien
-  image: mooey bien current.png
-  description: Que?
+  name: "Moouy Bien"
+  handle: "moouy-bien-happy-spanglish-cow-pun"
+  description: "Que? Light, playful, and full of retro beach energy. A cheeky cartoon rhino brings a vintage surf-poster vibe to your everyday muy-bien-ness."
+  price: "28.00"
+  type: "T-Shirt"
+  slug: "moouy-bien"
+  image: "main.jpg"
+  variants:
+    - "Person 2, Heather Prism Ice Blue.jpg"
+    - "Front 2, Athletic Heather.jpg"
+    - "Front 2, Heather Prism Ice Blue.jpg"
+    - "Front 2, Pink.jpg"
+
+- id: meow-vibes
+  name: "Meow Vibes"
+  handle: "meow-vibes-black-kitty-tree-pose-t-shirt-yoga-cat-tee"
+  description: "Identity, humor, and cats. The essential Spanglito trifecta. A sleek black cat balances in tree pose — playful energy grounded in slow breath."
+  price: "28.00"
+  type: "T-Shirt"
+  slug: "meow-vibes"
+  image: "main.jpg"
+  variants:
+    - "Person 1, Soft Pink.jpg"
+    - "Front 2, Heather Columbia Blue.jpg"
+    - "Front 2, Soft Cream.jpg"
+    - "Front 2, Soft Pink.jpg"
+
+- id: tomate-tu-tiempo
+  name: "Tomate Tu Tiempo (Wall Clock)"
+  handle: "copy-of-tomate-tu-tiempo-wall-clock-relaxed-tomato-illustration-kitchen-decor"
+  description: "A gentle, visual reminder to slow down. Features a sun‑soaked tomato character in a straw hat and Hawaiian shirt."
+  price: "49.99"
+  type: "Home Decor"
+  slug: "tomate-tu-tiempo"
+  image: "main.jpg"
+  variants:
+    - "Front, Wooden Base, Black, 10_.jpg"
+    - "Front, Black Base, Black, 10_.jpg"
+    - "Front, White Base, Black, 10_.jpg"
+    - "Front, Black Base, White, 10_.jpg"
+    - "Front, White Base, White, 10_.jpg"
+    - "Front, Wooden Base, White, 10_.jpg"

@@ -5,7 +5,7 @@ title: Espanglito — Shirts for people who live between two worlds
 
 <header>
   <a href="{{ '/' | relative_url }}">
-    <img class="logo" src="{{ '/assets/images/logo/spanglito-logo-rectangle.png' | relative_url }}" alt="Espanglito">
+    <img class="logo" src="{{ '/assets/images/logo/espanglito-logo-rectangle-removebg-preview.png' | relative_url }}" alt="Espanglito">
   </a>
 </header>
 
@@ -22,10 +22,29 @@ title: Espanglito — Shirts for people who live between two worlds
   <div class="designs-grid">
     {% for design in site.data.designs %}
     <div class="design-card">
-      <img src="{{ '/assets/images/designs/' | append: design.image | relative_url }}" alt="{{ design.name }}">
+      <div class="gallery-container">
+        <div class="nav-zone left" onclick="scrollGallery(this, -1)">&#8249;</div>
+        <div class="nav-zone right" onclick="scrollGallery(this, 1)">&#8250;</div>
+        
+        <div class="image-gallery">
+          <img src="{{ '/assets/images/products/' | append: design.slug | append: '/' | append: design.image | relative_url }}" alt="{{ design.name }}">
+          
+          {% for variant in design.variants %}
+            {% if variant != design.image %}
+              <img src="{{ '/assets/images/products/' | append: design.slug | append: '/' | append: variant | relative_url }}" alt="{{ design.name }} variant">
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
       <div class="card-body">
+        <span class="product-type">{{ design.type }}</span>
         <h3>{{ design.name }}</h3>
         <p>{{ design.description }}</p>
+        <p class="price">${{ design.price }}</p>
+        <a href="https://shop.espanglito.com/products/{{ design.handle }}?utm_source=jekyll&utm_medium=site&utm_campaign=espanglito" class="buy-button">
+          Buy →
+        </a>
+        <p class="secure-checkout">🔒 Secure checkout via Shopify</p>
       </div>
     </div>
     {% endfor %}
