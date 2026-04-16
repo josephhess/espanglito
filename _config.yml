@@ -2,6 +2,7 @@ title: Espanglito
 description: Shirts for people who live between two worlds
 baseurl: ""
 url: "https://espanglito.com"
+whatsapp_number: "593900000000" # Replace with your actual number (format: country code + number)
 
 markdown: kramdown
 exclude:
