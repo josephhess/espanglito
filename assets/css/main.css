@@ -127,6 +127,7 @@ main {
   color: var(--ink);
   font-size: 2rem;
   background: rgba(255,255,255,0);
+  border: none;
 }
 
 .nav-zone:hover { opacity: 0.4; }
@@ -176,10 +177,10 @@ main {
   font-family: sans-serif;
 }
 
-.price {
-  font-size: 1.1rem !important;
+.card-body .price {
+  font-size: 1.1rem;
   font-weight: bold;
-  color: var(--ink) !important;
+  color: var(--ink);
   margin-top: 0.5rem;
   font-family: sans-serif;
 }
@@ -187,7 +188,7 @@ main {
 .buy-button {
   display: inline-block;
   background: var(--red);
-  color: #fff !important;
+  color: #fff;
   font-family: sans-serif;
   font-size: 0.85rem;
   font-weight: bold;
@@ -201,7 +202,7 @@ main {
 
 .buy-button:hover { background: #a93226; }
 
-.secure-checkout {
+.card-body .secure-checkout {
   font-family: sans-serif;
   font-size: 0.65rem;
   color: var(--warm-gray);

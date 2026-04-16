@@ -18,13 +18,13 @@ title: Espanglito — Shirts for people who live between two worlds
   </section>
 
   <!-- DESIGNS -->
-  <p class="section-title">Los diseños</p>
+  <h2 class="section-title">Los diseños</h2>
   <div class="designs-grid">
     {% for design in site.data.designs %}
-    <div class="design-card">
+    <article class="design-card">
       <div class="gallery-container">
-        <div class="nav-zone left" onclick="scrollGallery(this, -1)">&#8249;</div>
-        <div class="nav-zone right" onclick="scrollGallery(this, 1)">&#8250;</div>
+        <button class="nav-zone left" onclick="scrollGallery(this, -1)" aria-label="Previous image">&#8249;</button>
+        <button class="nav-zone right" onclick="scrollGallery(this, 1)" aria-label="Next image">&#8250;</button>
         
         <div class="image-gallery">
           <img src="{{ '/assets/images/products/' | append: design.slug | append: '/' | append: design.image | relative_url }}" alt="{{ design.name }}">
@@ -41,12 +41,14 @@ title: Espanglito — Shirts for people who live between two worlds
         <h3>{{ design.name }}</h3>
         <p>{{ design.description }}</p>
         <p class="price">${{ design.price }}</p>
-        <a href="https://shop.espanglito.com/products/{{ design.handle }}?utm_source=jekyll&utm_medium=site&utm_campaign=espanglito" class="buy-button">
+        <a href="https://shop.espanglito.com/products/{{ design.handle }}?utm_source=jekyll&utm_medium=site&utm_campaign=espanglito"
+           class="buy-button"
+           aria-label="Buy {{ design.name }} on Shopify">
           Buy →
         </a>
         <p class="secure-checkout">🔒 Secure checkout via Shopify</p>
       </div>
-    </div>
+    </article>
     {% endfor %}
   </div>
 
@@ -61,8 +63,8 @@ title: Espanglito — Shirts for people who live between two worlds
 
 <footer>
   <p>
-    <a href="https://www.tiktok.com/@espanglito" target="_blank">TikTok</a> &nbsp;·&nbsp;
-    <a href="https://www.facebook.com/espanglito" target="_blank">Facebook</a>
+    <a href="https://www.tiktok.com/@espanglito" target="_blank" rel="noopener noreferrer">TikTok</a> &nbsp;·&nbsp;
+    <a href="https://www.facebook.com/espanglito" target="_blank" rel="noopener noreferrer">Facebook</a>
   </p>
   <p class="copyright">© {{ 'now' | date: "%Y" }} Espanglito</p>
 </footer>
