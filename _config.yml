@@ -4,6 +4,9 @@ baseurl: ""
 url: "https://espanglito.com"
 whatsapp_number: "593991673280" # Replace with your actual number (format: country code + number)
 
+plugins:
+  - jekyll-sitemap
+
 markdown: kramdown
 exclude:
   - Gemfile
